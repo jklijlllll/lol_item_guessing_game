@@ -1,0 +1,344 @@
+@font-face {
+    font-family: 'fritz-quadrata-std-medium';
+    src: local('fritz-quadrata-std-medium'), url(../Media/Fonts/friz-quadrata-std-medium-5870338ec7ef8.woff) format('woff');
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    color: white;
+    background-image: url(../Media/Howling_Abyss_Landscape.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+.app_container{
+    width: 95vw;
+    height: 95vh;
+    min-width: 1200px;
+    min-height: 800px;
+}
+
+.menu {
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 55%;
+    height: 95%;
+    top: 2%;
+    margin: 0 auto auto;
+    border: 3px solid #EDB852;
+    background-color: #13181B;
+    border-radius: 20px;
+}
+
+.high_score_container {
+    position: relative;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.high_score_text {
+    font-size: 24px;
+    font-family: 'fritz-quadrata-std-medium';
+    color: #cfc895;
+}
+
+.logo {
+    height: 30%;
+    image-resolution: 831/1280;
+}
+
+.title_text {
+    margin: 0 0 1vh 0;
+    font-size: 55px;
+    background-image:  linear-gradient(to right, #c5a25b, #ebdc8f, #c5a25b);
+    background-clip: text;
+    color:transparent;
+    font-family: 'fritz-quadrata-std-medium';
+    
+}
+.rank_icon {
+    height: 35%;
+    image-resolution: 512/585;
+}
+
+.MuiSlider-root {
+    width: 40%!important; 
+    color: #404138!important;
+    height: 20px!important;
+}
+
+.MuiSlider-root .MuiSlider-thumb {
+    border-radius: 1px!important;
+    color: #EDB852!important;
+    height: 18px!important;
+    width: 18px!important;
+    border: 1.5px solid #605e3e!important;
+}
+
+.MuiSlider-root .MuiSlider-thumb:active {
+    box-shadow: 0 0 0 0 !important;
+}
+
+.MuiSlider-root .MuiSlider-thumb:focus-within {
+    box-shadow: 0 0 0 0 !important;
+}
+
+.MuiSlider-rail {
+    color: #0c1210!important;
+    opacity: 100%!important;
+    border-radius: 0!important;
+    width: calc(100% + 22px) !important;
+    left: -13px!important;
+    border: 2px solid #EDB852!important;
+    height: 24px!important;
+}
+
+.MuiSlider-mark {
+    background-color: #0c1210!important;
+}
+.play_button {
+    height: 5%;
+    width: 20%;
+    font-size: 25px;
+    font-family: 'fritz-quadrata-std-medium';
+    color: #cfc895;
+    margin-top: 10px;
+    border: 2px solid #d0ac65;
+    background: #0b0f10;
+    cursor: pointer;
+}
+
+.play_button:hover{
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+      box-shadow: 0px 0px 20px -3px #a59668;
+    }
+    to {
+      box-shadow: 0px 0px 20px 3px #a59668;
+    }
+  }
+
+.game {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 95%;
+    margin: 2% auto auto;
+    border: 3px solid #EDB852;
+    background-color: #13181B;
+    border-radius: 20px;
+}
+
+.spinner {
+    position: relative;
+    margin: auto;
+}
+.current_info {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 65%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.item_info {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+    flex-basis: 70%;
+    gap: 50px;
+}
+
+.prev_info {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.header {
+    display:flex;
+    flex-direction: row-reverse;
+    height: 10%;
+    width: 100%;
+}
+
+.close_button {
+    right: 15px;
+    top: 15px; 
+}
+
+.timer {
+    font-size: 35px;
+    font-family: 'fritz-quadrata-std-medium';
+    line-height: 0;
+}
+
+.score_text {
+    font-size: 40px;
+    font-family: 'fritz-quadrata-std-medium';
+    line-height: 0;
+    
+}
+
+.item_selection {
+    position:relative;
+    height: 120px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+
+.form_container {
+    position: relative;
+    height: 25%;
+    width: 50%;
+}
+
+.guess_container {
+    position: relative;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    align-items:  center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.guess_label {
+    flex-grow: 3;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.guess_input {
+    background-color: #0b0f10;
+    color: #cfc895;
+    border: 2px solid #d0ac65;
+    outline: none;
+    height: 100%;
+    font-size: 100%;
+    width: 100%;
+}
+.guess_submit {
+    width: 50%;
+    flex-grow: 2;
+    font-family: 'fritz-quadrata-std-medium';
+    color: #cfc895;
+    background: #0b0f10;
+    cursor: pointer;
+    border: 2px solid #d0ac65;
+}
+
+.guess_submit:hover{
+    animation: glow 1s infinite alternate;
+}
+.current_items {
+    height: 100%;
+    image-resolution: 1/1;
+    border: 2px solid #c99a3c;
+    border-radius: 5px;
+}
+
+.correct_prices {
+    display:flex;
+    position: relative;
+    height: 30%;
+    width: 100%;
+    justify-content: space-evenly;
+    font-size: 10px;
+    font-family: 'fritz-quadrata-std-medium';
+}
+
+.prev_items {
+    height: 50%;
+    image-resolution: 1/1;
+    border: 1px solid #c99a3c;
+    border-radius: 2.5px;
+}
+
+.correct_sum {
+    font-size: 30px;
+    line-height: 50%;
+    font-family: 'fritz-quadrata-std-medium';
+    color: green;
+}
+
+.incorrect_sum {
+    font-size: 30px;
+    font-family: 'fritz-quadrata-std-medium';
+    color: red;
+}
+
+.score_container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.score_title {
+    line-height: 0;
+    font-family: 'fritz-quadrata-std-medium';
+    font-size: 70px;
+}
+
+.score_text {
+    line-height: 0;
+    font-family: 'fritz-quadrata-std-medium';
+    font-size: 70px;
+}
+
+.done_button {
+    height: 5%;
+    width: 20%;
+    font-size: 25px;
+    font-family: 'fritz-quadrata-std-medium';
+    color: #cfc895;
+    margin-top: 10px;
+    border: 2px solid #d0ac65;
+    background: #0b0f10;
+    cursor: pointer;
+}
+
+.done_button:hover{
+    animation: glow 1s infinite alternate;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
